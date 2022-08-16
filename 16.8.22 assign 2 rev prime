@@ -1,0 +1,30 @@
+#include<stdio.h>
+void main()
+{
+	int a[10],i,j;
+	printf("enter array elements");
+	for(i=0;i<5;i++)
+	scanf("%d",&a[i]);
+	printf(" rev prime numbers are");
+	for(i=4;i>0;i--)
+	{
+		int c=0;
+		for(j=2;j<a[i];j++)
+		{
+			if(a[i]!=1&&a[i]%j==0)
+			{
+				c++;
+				break++;
+			}
+		}
+		if(c==0)
+		printf("%d",a[i]);
+	}
+	getch();
+}
+
+
+out put:
+enter array elements 1 2 3 4 5
+rev prime numbers are 5 3 2
+
