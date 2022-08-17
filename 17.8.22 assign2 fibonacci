@@ -1,0 +1,33 @@
+#include<stdio.h>
+void main()
+{
+int a[20],i,f;
+a[0]=0;
+a[1]=1;
+printf("fibonocci series is");
+printf("\n%d\n%d",a[0],a[1]);
+for(i=0;i<20;i++)
+{
+f=a[0]+a[1];
+a[0]=a[1];
+a[1]=f;
+if(f<100)
+printf("\n%d",f)
+else
+break++;
+}
+
+
+out put:
+0 
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89
