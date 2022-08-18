@@ -1,0 +1,22 @@
+#include<stdio.h>
+void main()
+{
+	 int a[]={2,3,4};
+	 int i,j,k,fact,sum=0;
+	 int len=sizeof(a)/sizeof(int);
+	 for(i=0;i<len;i++)
+	 {
+		fact=1;
+		k=a[i];
+		for(j=k;j>0;j--)
+		{
+			fact=fact*i;
+		}
+		sum=sum+fact;
+	}
+	printf("sum of all array factorials is %d",sum);
+	getch();
+}
+
+out put:
+sum of all array factorials is 32		
