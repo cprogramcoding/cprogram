@@ -1,0 +1,43 @@
+#include<stdio.h>
+void main()
+{
+	int a[100][100];
+	int i,j,r,c,sum,t;
+	printf("enter row size");
+	scanf("%d",&r);
+	printf("enter col size");
+	scanf("%d",&c);
+	printf("enter elements in to array");
+	for(i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+		{
+			scanf("%d",&a[i][j]);
+		}
+	}
+	printf("enter needed row");
+	scanf("%d",&t);
+	for(i=0;i<r;i++)
+	{
+		if(i==t)
+		{
+			sum=0;
+			for(j=0;j<c;j++)
+			{
+				sum=sum+a[i][j];
+			}
+			printf("%d row sum is %d",i+1,sum);
+		}
+	}
+	getch();
+}	
+
+
+out put:
+enter row size 2
+enter col size 2
+enter elements in to array
+3 4
+5 6
+enter needed row 1
+1 row sum is 11
