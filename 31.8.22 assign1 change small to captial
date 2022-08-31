@@ -1,0 +1,28 @@
+#include<string.h>
+int main()
+{
+	char s[100];
+	int v;
+	printf("enter a string\n");
+	gets(s);
+	for(v=0;s[v]!='\0';v++)
+	{
+		if(s[v]=='a')
+		{
+			s[v]=s[v]-32;
+		}
+	}
+	printf("output:\n");
+	puts(s);
+      return 0;
+}
+
+out put:
+enter a string 
+naga
+output
+nAgA
+
+bindhu
+bindhu
+
