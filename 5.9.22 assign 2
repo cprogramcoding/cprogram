@@ -1,0 +1,21 @@
+#include<stdio.h>
+void main()
+{ 	
+	int x[50],i,n,len;
+	printf("enter n value");
+	scanf("%d",&n);
+	printf("enter arry elemnts");
+	for(i=0;i<n;i++)
+	scanf("%d",&a[i]);
+	len=n-1;
+	display(x,0,len);
+}
+void display(int x[],int start,int end)
+{
+	if(start>end)
+	return ;
+	else
+	printf("%d\n",x[start]);
+	display(x,start+1,end);
+}
+	
