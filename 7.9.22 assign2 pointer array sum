@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int a[10],i,n,*p,sum=0;
+    printf("enter n value");
+    scanf("%d",&n);
+    printf("enter arry elements");
+    for(i=0;i<n;i++)
+    scanf("%d",&a[i]);
+    p=&a[0];
+    for(i=0;i<n;i++)
+    {
+        sum=sum+(*p);
+        p++;
+    }
+    printf("%d",sum);
+    getch();
+}
+
+out put:
+enter n value 5
+enter array elements 1 2 3 3 2
+11
